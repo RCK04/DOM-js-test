@@ -33,7 +33,7 @@ function clicou(){
     
     const ul = teste.querySelector('ul')
 
-    // testando
+    // testando o DOM 
     
 }
 
