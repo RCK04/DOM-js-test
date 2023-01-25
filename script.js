@@ -28,12 +28,55 @@ console.log(div)
 
 */
 
-function clicou(){
-    const teste = document.querySelector('#teste')
-    
-    const ul = teste.querySelector('ul')
+// const button = document.querySelector('.botao')
 
+// button.addEventListener('click', clicou)
+
+// function clicou(){
+//     const teste = document.querySelector('#teste')
+    
+    // const ul = teste.querySelector('ul')
+
+    // const newList = document.createElement('ul')
+
+    // for(let i = 0; i < 5; i++){
+    //     let newLi = document.createElement('li')
+    //     newLi.innerHTML = 'Item add ' + i
+    //     newList.append(newLi)
+    // }
+
+    // ul.after(newList)
+    
+
+    
+
+    // let newLi = document.createElement('li')
+    // newLi.innerText = 'Item adicionado'
+
+    // ul.appendChild(newLi)
+    // ul.prepend(newLi)
     // testando o DOM - //
+    
+// }
+
+const input = document.querySelector('.input')
+const button = document.querySelector('.botao')
+
+button.addEventListener('click', clicou)
+
+function clicou(){
+
+
+
+    if(input.getAttribute('type') === 'text'){
+
+        input.setAttribute('type', 'password')
+        button.innerText = 'Mostrar senha'
+    } else{
+        input.setAttribute('type', 'text')
+        button.innerText = 'Esconder senha'
+    }
+    
     
 }
 
