@@ -77,6 +77,7 @@ function clicou(){
         button.innerText = 'Esconder senha'
     }
     
+    // inner
     
 }
 
