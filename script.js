@@ -59,25 +59,36 @@ console.log(div)
     
 // }
 
-const input = document.querySelector('.input')
+// const input = document.querySelector('.input')
+// const button = document.querySelector('.botao')
+
+// button.addEventListener('click', clicou)
+
+// function clicou(){
+
+
+
+//     if(input.getAttribute('type') === 'text'){
+
+//         input.setAttribute('type', 'password')
+//         button.innerText = 'Mostrar senha'
+//     } else{
+//         input.setAttribute('type', 'text')
+//         button.innerText = 'Esconder senha'
+//     }
+    
+    
+    
+// }
 const button = document.querySelector('.botao')
 
 button.addEventListener('click', clicou)
 
 function clicou(){
+    const li = document.querySelector('li')
 
+    li.style.backgroundColor = 'blue'
+    li.style.fontSize = '20px'
 
-
-    if(input.getAttribute('type') === 'text'){
-
-        input.setAttribute('type', 'password')
-        button.innerText = 'Mostrar senha'
-    } else{
-        input.setAttribute('type', 'text')
-        button.innerText = 'Esconder senha'
-    }
-    
-    // inner
-    
 }
 
