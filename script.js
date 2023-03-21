@@ -107,8 +107,8 @@ function clicou(){
 
     button.classList.toggle('azul')
 
-    
-    console.log(button.classList);
+
+    // console.log(button.classList);
 }
 
 
