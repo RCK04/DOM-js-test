@@ -84,11 +84,32 @@ const button = document.querySelector('.botao')
 
 button.addEventListener('click', clicou)
 
+
+// function clicou(){
+//     const li = document.querySelector('li')
+
+//     li.style.backgroundColor = 'blue'
+//     li.style.fontSize = '20px'
+
+// }
+
 function clicou(){
-    const li = document.querySelector('li')
+    
+    // if(button.classList.contains('azul')){
+    //     button.classList.remove('azul');
+    //     button.classList.add('verde');
+    //     button.style.backgroundColor = 'green'
+    // } else {
+    //     button.classList.add('azul');
+    //     button.classList.remove('verde');
+    //     button.style.backgroundColor = 'blue'
+    // }
 
-    li.style.backgroundColor = 'blue'
-    li.style.fontSize = '20px'
+    button.classList.toggle('azul')
 
+
+    console.log(button.classList);
 }
+
+
 
