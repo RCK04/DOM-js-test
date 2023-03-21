@@ -80,36 +80,60 @@ console.log(div)
     
     
 // }
-const button = document.querySelector('.botao')
+// const button = document.querySelector('.botao')
 
-button.addEventListener('click', clicou)
+// button.addEventListener('click', clicou)
 
+
+// // function clicou(){
+// //     const li = document.querySelector('li')
+
+// //     li.style.backgroundColor = 'blue'
+// //     li.style.fontSize = '20px'
+
+// // }
 
 // function clicou(){
-//     const li = document.querySelector('li')
 
-//     li.style.backgroundColor = 'blue'
-//     li.style.fontSize = '20px'
+//     // if(button.classList.contains('azul')){
+//     //     button.classList.remove('azul');
+//     //     button.classList.add('verde');
+//     //     button.style.backgroundColor = 'green'
+//     // } else {
+//     //     button.classList.add('azul');
+//     //     button.classList.remove('verde');
+//     //     button.style.backgroundColor = 'blue'
+//     // }
 
+//     button.classList.toggle('azul')
+// console.log(button.classList);
+
+// function soltou(event){
+//     console.log('Tecla Apertada: '+ event.code)
+//     console.log('Shift? '+ event.shiftKey)
+//     console.log('CTRL? '+ event.ctrlKey)
+//     console.log('ALT? '+ event.altKey)
 // }
 
-function clicou(){
+// const input = document.querySelector('input')
 
-    // if(button.classList.contains('azul')){
-    //     button.classList.remove('azul');
-    //     button.classList.add('verde');
-    //     button.style.backgroundColor = 'green'
-    // } else {
-    //     button.classList.add('azul');
-    //     button.classList.remove('verde');
-    //     button.style.backgroundColor = 'blue'
-    // }
+// input.addEventListener('keyup', soltou)
 
-    button.classList.toggle('azul')
+const input = document.querySelector('input')
+const lista = document.querySelector('ul')
+const item = document.querySelector('li')
 
+function handleKeyUp(event){
+    if(event.key === 'Enter'){
+        const newLi = document.createElement('li')
+       newLi.innerHTML = input.value;
+       lista.appendChild(newLi)
 
-    // console.log(button.classList);
+       input.value = ''
+    }
+
 }
 
+input.addEventListener('keyup', handleKeyUp);
 
 
