@@ -94,7 +94,7 @@ button.addEventListener('click', clicou)
 // }
 
 function clicou(){
-    
+
     // if(button.classList.contains('azul')){
     //     button.classList.remove('azul');
     //     button.classList.add('verde');
@@ -107,7 +107,7 @@ function clicou(){
 
     button.classList.toggle('azul')
 
-
+    
     console.log(button.classList);
 }
 
