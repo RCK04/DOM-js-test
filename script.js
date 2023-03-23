@@ -118,7 +118,7 @@ console.log(div)
 // const input = document.querySelector('input')
 
 // input.addEventListener('keyup', soltou)
-// Lista simples - adicionar
+// Lista simples - adicionar itens escritos no input
 const input = document.querySelector('input')
 const lista = document.querySelector('ul')
 const item = document.querySelector('li')
